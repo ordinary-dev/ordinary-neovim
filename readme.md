@@ -17,14 +17,15 @@ After installation, nvim-treesitter will start to compile required modules.
 This step may take 5-10 minutes.
 
 ## List of plugins
-- Packer - plugin manager
-- Lualine - fancy status line
-- Telescope - file search
-- Nvim-Tree - file explorer
-- Nvim-Treesitter - accurate syntax highlighting
+- [Packer](https://github.com/wbthomason/packer.nvim) - plugin manager written in lua
+- [Lualine](https://github.com/nvim-lualine/lualine.nvim) - fancy status line
+- [Telescope](https://github.com/nvim-telescope/telescope.nvim) - file search
+- [Nvim-Tree](https://github.com/nvim-tree/nvim-tree.lua) - file explorer
+- [Nvim-Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - accurate syntax highlighting
 
-## Required programs
-- Ripgrep - used by telescope to find files
+## Required programs and files
+- [Ripgrep](https://github.com/BurntSushi/ripgrep) - used by telescope to find files (respects `.gitignore`!)
+- [Pathed 'nerd' font](https://github.com/ryanoasis/nerd-fonts) - used by lualine (it looks like a regular font, but it has embeded icons)
 
 ## Keybindings
 - `Ctrl+f` - search for files
