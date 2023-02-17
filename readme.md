@@ -4,12 +4,10 @@ My neovim configuration.
 
 ## Getting started
 ```bash
-# Move your existing configuration
+# Move your existing configuration somewhere else
 mv ~/.config/nvim{,-old}
-# Clone this repository (destination path may be changed)
-git clone https://github.com/ordinary-dev/ordinary-neovim ~/ordinary-neovim
-# Create a symlink
-ln -s ~/ordinary-neovim ~/.config/nvim
+# Clone this repository
+git clone https://github.com/ordinary-dev/ordinary-neovim ~/.config/nvim
 ```
 
 Now open neovim and run `:PackerInstall`.
