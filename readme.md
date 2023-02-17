@@ -4,8 +4,8 @@ My neovim configuration.
 
 ## Getting started
 ```bash
-# Delete your existing configuration
-rm -r ~/.config/nvim
+# Move your existing configuration
+mv ~/.config/nvim{,-old}
 # Clone this repository (destination path may be changed)
 git clone https://github.com/ordinary-dev/ordinary-neovim ~/ordinary-neovim
 # Create a symlink
