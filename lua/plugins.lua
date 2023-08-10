@@ -38,4 +38,7 @@ packer.startup(function(use)
 
     -- LSP
     use 'neovim/nvim-lspconfig'
+    use {
+        "ray-x/lsp_signature.nvim",
+    }
 end)
