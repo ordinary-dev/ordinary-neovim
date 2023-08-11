@@ -20,6 +20,7 @@ configs.setup {
         "lua", "luadoc",
         "make",
         "markdown", "markdown_inline",
+        "nix",
         "python",
         "ruby",
         "rust",
