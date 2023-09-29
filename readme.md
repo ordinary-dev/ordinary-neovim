@@ -7,7 +7,7 @@ My neovim configuration.
 # Move your existing configuration somewhere else
 mv ~/.config/nvim{,-old}
 # Clone this repository
-git clone https://github.com/ordinary-dev/ordinary-neovim ~/.config/nvim
+git clone git@github.com:ordinary-dev/ordinary-neovim.git ~/.config/nvim
 ```
 
 After installation, nvim-treesitter will start to compile required modules.
