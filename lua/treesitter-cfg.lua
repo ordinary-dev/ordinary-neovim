@@ -17,6 +17,7 @@ configs.setup {
         "javascript", "typescript", "tsx",
         "jsdoc",
         "json", "json5", "jsonc",
+        "kotlin",
         "lua", "luadoc",
         "make",
         "markdown", "markdown_inline",
