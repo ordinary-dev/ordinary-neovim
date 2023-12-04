@@ -40,8 +40,13 @@ require("lazy").setup({
 
   -- LSP
   { 'neovim/nvim-lspconfig' },
+  { 'ray-x/lsp_signature.nvim' },
   {
-    'ray-x/lsp_signature.nvim',
+    'hrsh7th/nvim-cmp',
+    dependencies = {
+      'hrsh7th/cmp-nvim-lsp',
+      { 'L3MON4D3/LuaSnip', version = "v2.*" },
+    },
   },
 
   -- Neo-tree
