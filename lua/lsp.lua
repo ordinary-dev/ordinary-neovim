@@ -3,7 +3,7 @@ if not status then return end
 
 local util = require "lspconfig/util"
 
-local status, cmp_nvim_lsp = pcall("require", "cmp_nvim_lsp")
+local status, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not status then return end
 
 local capabilities = cmp_nvim_lsp.default_capabilities()
@@ -62,10 +62,10 @@ if not status then return end
 local cfg = {}
 lspsignature.setup(cfg)
 
-local status, cmp = pcall("require", "cmp")
+local status, cmp = pcall(require, "cmp")
 if not status then return end
 
-local status, luasnip = pcall("require", "luasnip")
+local status, luasnip = pcall(require, "luasnip")
 if not status then return end
 
 cmp.setup {
