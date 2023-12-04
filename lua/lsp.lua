@@ -3,6 +3,11 @@ if not status then return end
 
 local util = require "lspconfig/util"
 
+local status, cmp_nvim_lsp = pcall("require", "cmp_nvim_lsp")
+if not status then return end
+
+local capabilities = cmp_nvim_lsp.default_capabilities()
+
 lspconfig.gopls.setup {
     cmd = {"gopls", "serve"},
     filetypes = {"go", "gomod"},
@@ -15,6 +20,7 @@ lspconfig.gopls.setup {
             staticcheck = true,
         },
     },
+    capabilites = capabilites,
 }
 
 lspconfig.rust_analyzer.setup {
@@ -22,6 +28,7 @@ lspconfig.rust_analyzer.setup {
     settings = {
         ['rust-analyzer'] = {},
     },
+    capabilites = capabilites,
 }
 
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
@@ -54,3 +61,21 @@ if not status then return end
 
 local cfg = {}
 lspsignature.setup(cfg)
+
+local status, cmp = pcall("require", "cmp")
+if not status then return end
+
+local status, luasnip = pcall("require", "luasnip")
+if not status then return end
+
+cmp.setup {
+  snippet = {
+    expand = function(args)
+      luasnip.lsp_expand(args.body)
+    end,
+  },
+  sources = {
+    { name = 'nvim_lsp' },
+    { name = 'luasnip' },
+  },
+}
