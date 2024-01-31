@@ -31,6 +31,9 @@ lspconfig.rust_analyzer.setup {
     capabilites = capabilites,
 }
 
+lspconfig.tsserver.setup {
+}
+
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
