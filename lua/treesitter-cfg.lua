@@ -13,6 +13,7 @@ configs.setup {
         "gdscript",
         "gitcommit", "gitignore", "gitattributes", "git_rebase", "git_config",
         "go", "gomod",
+        "graphql",
         "html", "css", "scss",
         "javascript", "typescript", "tsx",
         "jsdoc",
